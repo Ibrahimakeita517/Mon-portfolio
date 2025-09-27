@@ -1,0 +1,313 @@
+ /* À ajouter en haut de votre fichier CSS */
+:root {
+  --bg-dark: #121212;
+  --text-dark: #e0e0e0;
+  --accent-dark: #08f;
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode a,
+body.dark-mode h1,
+body.dark-mode h2 {
+  color: var(--accent-dark);
+}
+
+/* Active le mode sombre par défaut */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  transition: all 0.5s ease;
+}
+ :root {
+  --mouse-x: 0.5;
+  --mouse-y: 0.5;
+  --color-accent: #08f;
+}
+
+/* Effet de lumière basé sur la souris */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(
+      circle at calc(var(--mouse-x) * 100%) calc(var(--mouse-y) * 100%),
+      rgba(0, 150, 255, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: -1;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6fa;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  background: #1e90ff;
+  color: white;
+  padding: 30px 10px;
+  position: relative;
+}
+
+.photo-profil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+}
+
+button#toggle-mode {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section {
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #1e90ff;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#form-result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background: #1e90ff;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ANIMATIONS CLAQUÉES */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes neon {
+  0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #08f; }
+  50% { text-shadow: 0 0 10px #fff, 0 0 20px #08f, 0 0 30px #08f; }
+  100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #08f; }
+}
+
+/* EFFETS SPÉCIFIQUES */
+.project:hover {
+  animation: pulse 1.5s infinite, float 3s ease-in-out infinite;
+  transition: all 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 150, 255, 0.5);
+}
+
+h2 {
+  animation: neon 2s infinite alternate;
+}
+
+.btn {
+  background: linear-gradient(45deg, #08f, #00ffaa);
+  background-size: 200% 200%;
+  animation: gradientPulse 3s ease infinite;
+}
+
+@keyframes gradientPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* EFFET "MATRIX" DISCRET */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" opacity="0.03"><text x="10" y="20" font-family="monospace" font-size="14" fill="white">0101</text></svg>');
+  pointer-events: none;
+  z-index: 9999;
+}
+.blink-cursor {
+  position: relative;
+}
+.blink-cursor::after {
+  content: '|';
+  animation: blink 1s infinite;
+  position: absolute;
+  right: -10px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.project {
+  transition: transform 0.5s ease-out, box-shadow 0.3s;
+  transform-style: preserve-3d;
+}
+/* ================= ANIMATIONS ADDITIONNELLES ================= */
+/* Effet "Splash" au chargement */
+@keyframes splash {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+body.loaded * {
+  animation: splash 0.6s ease-out forwards;
+}
+
+/* Flottement doux pour les sections */
+section {
+  transition: transform 0.4s;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Bouton "Envoyer" futuriste */
+button[type="submit"] {
+  position: relative;
+  overflow: hidden;
+}
+
+button[type="submit"]::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255,255,255,0.3) 0%,
+    rgba(255,255,255,0) 60%
+  );
+  transform: rotate(30deg);
+  transition: all 0.5s;
+}
+
+button[type="submit"]:hover::after {
+  left: 100%;
+  top: 100%;
+}
+
+/* Effet "Matrix" discret pour le texte */
+@keyframes matrixGlitch {
+  0% { text-shadow: none; }
+  5% { text-shadow: -2px 0 cyan, 2px 0 magenta; }
+  100% { text-shadow: none; }
+}
+
+h2:hover {
+  animation: matrixGlitch 0.3s linear;
+}
+/* Amélioration de la lisibilité en mode sombre */
+body.dark-mode {
+  line-height: 1.6;
+}
+
+body.dark-mode #aproposdemoi,
+body.dark-mode #mescompetences {
+  background: rgba(30, 30, 30, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+/* Animation douce pour les transitions */
+body.dark-mode section {
+  transition: background 0.3s ease;
+}
+
+body.dark-mode section:hover {
+  background: rgba(40, 40, 40, 0.6);
+}
+/* Mode sombre par défaut */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: all 0.5s;
+}
+
+/* Styles de la photo en mode sombre */
+header img {
+  box-shadow: 0 0 10px rgba(0, 150, 255, 0.5);
+}
+header img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}

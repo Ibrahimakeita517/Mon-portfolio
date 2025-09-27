@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="Ibrahima keita" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+ <header>
+  <!-- Votre photo + nom -->
+  <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
+    <img 
+      src="image/kei.jpg"  
+      style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid rgb(0, 0, 0);"
+    >
+    <div>
+      <h1 style="margin: 0; color: rgb(255, 255, 255);">Ibrahima Keïta</h1>
+      <p style="margin: 0; font-style: italic;">Développeur Web Passionné</p>
+    </div>
+  </div>
+
+  <!-- Bouton Mode Sombre/Clair -->
+  <button id="toggle-mode" style="background: rgb(10, 10, 10); color: white; border: none; padding: 8px 15px; border-radius: 5px;">
+    🌙 Mode Sombre
+  </button>
+</header>
+
+  <section id="about" class="fade-in">
+    <h2>À |propos |de| moi</h2>
+    <p>Je suis un jeune passionné par le monde du web et de la technologie. Depuis mes débuts, j’ai toujours été fasciné par la façon dont une simple ligne de code peut donner vie à une idée. Chaque jour, j’apprends, je teste, je me trompe, je recommence — mais je n’abandonne jamais. Mon objectif est simple : devenir un développeur compétent, respecté et utile à ma communauté. Ce portfolio est le reflet de mon parcours, de mes efforts et de ma vision. Ce n’est que le début, mais je suis prêt à aller loin, étape par étape, projet par projet</p>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <h2>Mes Compétences</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <ii>Python</ii>
+      <li>C++</li>
+    </ul>
+  </section>
+   
+   <section id="projects">
+    <h2>Mes Projets</h2>
+    <div class="project">
+      <h3>Anw Ka Sugu</h3>
+      <p>Anw Ka Sugu est une boutique en ligne locale qui permet aux clients de découvrir et commander facilement des produits courants du Mali.
+Grâce à un système de panier, de livraison et de paiement mobile, l’application rend les achats rapides, pratiques et accessibles à tous.</p>
+    </div>
+    <div class="project">
+      <h3>MaliCraft</h3>
+      <p> MaliCraft signifie les créations artisanales est une boutique en ligne que j’ai conçue pour aider les jeunes maliens à vendre leurs créations et services. J’ai travaillé sur le design, le code, l’interactivité et un système de panier + commande avec paiement par Mobile Money.</p>
+    </div>
+    <div class="project">
+      <h3>JobGo</h3>
+      <p>JobGo est une plateforme de mise en relation entre les demandeurs d'emploi et les recruteurs. J'ai développé cette application pour faciliter la recherche d'emploi au Mali, en intégrant des fonctionnalités de filtrage et de messagerie.</p>
+    </div>
+    <div class="project">
+      <h3>AgriConseil</h3>
+      <p>AgriConseil est une plateforme dédiée à l'agriculture au Mali. Elle fournit des conseils, des ressources et des outils aux agriculteurs pour améliorer leurs pratiques et augmenter leurs rendements. J'ai développé cette application en mettant l'accent sur l'accessibilité et la facilité d'utilisation.</p>
+    </div>
+    <div class="project">
+      <h3>Malischox</h3>
+      <p>Malischox est une plateforme de schox au mali qui permet les malien de voir les fête a venir dans le week end et dans les mois et année en ligne  J'ai conçu cette application pour mettre en avant les événements culturels et festifs du Mali, en intégrant un calendrier interactif et des options de partage sur les réseaux sociaux.</p>
+      </p>
+    </div>
+    <div class="project">
+      <h3>Sikaa</h3>
+      <p>Sikaa est une application mobile que j'ai développée pour aider les maliens à trouver des livreurs fiables. Les commerçants peuvent facilement se connecter avec des livreurs pour livrer les colis des clients. et même les client peux suivre leur commande en temps réel.</p>  
+    </div>
+    <p> toute ces Projets sont en cours de développement presque terminées.</p>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Tu peux me contacter sur WhatsApp directement :</p>
+    <a href="https://wa.me/22383221696" class="btn">M’écrire</a>
+  </section>
+
+  <section id="infos vite fais" class="fade-in">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" id="nom" placeholder="Votre nom" required />
+      <input type="email" id="email" placeholder="Votre email" required />
+      <textarea id="message" placeholder="Votre message..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p id="form-result"></p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="annee"></span>- Pixel Coder</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
