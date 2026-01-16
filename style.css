@@ -160,7 +160,7 @@ body.dark-mode .navbar a.active {
 header {
   text-align: center;
   /* Image de fond avec effet parallaxe et superposition de couleur bleue */
-  background: linear-gradient(rgba(30, 144, 255, 0.5), rgba(30, 144, 255, 0.5)), url('img/ves.jpg');
+  background: linear-gradient(rgba(30, 144, 255, 0.5), rgba(30, 144, 255, 0.5)), url('IMG/ves.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -729,4 +729,5 @@ body.dark-mode #back-to-top {
   .btn, form button {
     width: 100%;
   }
+
 }
