@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ibrahima Keïta" />
+  <meta name="description" content="Portfolio de Ibrahima Keïta, développeur web passionné au Mali." />
+  <title>Portfolio - Ibrahima Keïta</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+ <header>
+  <div class="header-content">
+    <img src="img/kei.jpg" alt="Photo de Ibrahima Keïta" class="photo-profil">
+    <div class="header-text">
+      <h1>Ibrahima Keïta</h1>
+      <p class="subtitle">Expert en Développement Mobile & Web</p>
+    </div>
+  </div>
+
+  <!-- Bouton Mode Sombre/Clair -->
+  <button id="toggle-mode">
+    🌙 Mode Sombre
+  </button>
+</header>
+
+  <section id="about" class="fade-in">
+    <h2>À propos de moi</h2>
+    <p>Développeur passionné spécialisé dans la création d'applications web et mobiles modernes. Avec une solide expertise en <strong>React Native</strong>, <strong>Flutter</strong> et <strong>Java</strong>, je conçois des expériences mobiles fluides et performantes. Côté backend, je maîtrise <strong>PHP/Laravel</strong> et les solutions modernes comme <strong>Supabase</strong> et <strong>SQL</strong> pour bâtir des architectures robustes. Mon objectif est de transformer vos idées les plus complexes en solutions numériques intuitives et à fort impact.</p>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <h2>Mes Compétences</h2>
+
+    <div class="skills-grid-container">
+      <div class="skills-category-card">
+        <h3><i class="fas fa-globe"></i> Développement Web</h3>
+        <ul class="skills-list">
+          <li>
+            <div class="skill-info">
+              <span><i class="fab fa-html5"></i> HTML5 / CSS3</span>
+              <span>95%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+          </li>
+          <li>
+            <div class="skill-info">
+              <span><i class="fab fa-js"></i> JavaScript</span>
+              <span>90%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+          </li>
+          <li>
+            <div class="skill-info">
+              <span><i class="fab fa-python"></i> Python</span>
+              <span>75%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skills-category-card">
+        <h3><i class="fas fa-mobile-alt"></i> Mobile & Frameworks</h3>
+        <ul class="skills-list">
+          <li>
+            <div class="skill-info">
+              <span><i class="fab fa-react"></i> React Native</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+          </li>
+          <li>
+            <div class="skill-info">
+              <span><i class="fab fa-flutter"></i> Flutter</span>
+              <span>75%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+          </li>
+          <li>
+            <div class="skill-info">
+              <span><i class="fab fa-java"></i> Java (Android)</span>
+              <span>70%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" data-width="70%"></div></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skills-category-card">
+        <h3><i class="fas fa-server"></i> Backend & Data</h3>
+        <ul class="skills-list">
+          <li>
+            <div class="skill-info">
+              <span><i class="fas fa-bolt"></i> Supabase</span>
+              <span>80%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+          </li>
+          <li>
+            <div class="skill-info">
+              <span><i class="fas fa-database"></i> SQL / PostgreSQL</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+          </li>
+          <li>
+            <div class="skill-info">
+              <span><i class="fab fa-php"></i> PHP / Laravel</span>
+              <span>75%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+   
+   <section id="projects">
+    <h2>Mes Projets</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <div class="project-tags">
+          <span class="tag">React Native</span>
+          <span class="tag">Java</span>
+        </div>
+        <h3>Anw Ka Sugu</h3>
+        <p>Boutique en ligne locale optimisée pour le marché malien avec paiement mobile intégré.</p>
+        <a href="project.html?id=anwkasugu" class="btn">Voir détails</a>
+      </div>
+      <div class="project">
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">SQL</span>
+        </div>
+        <h3>MaliCraft</h3>
+        <p>Plateforme e-commerce dédiée à l'artisanat malien avec gestion de panier complexe.</p>
+        <a href="project.html?id=malicraft" class="btn">Voir détails</a>
+      </div>
+      <div class="project">
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">SQL</span>
+        </div>
+        <h3>JobGo</h3>
+        <p>Plateforme de mise en relation entre demandeurs d'emploi et recruteurs au Mali.</p>
+        <a href="project.html?id=jobgo" class="btn">Voir détails</a>
+      </div>
+      <div class="project">
+        <div class="project-tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Firebase</span>
+        </div>
+        <h3>AgriConseil</h3>
+        <p>Conseils et outils numériques pour améliorer les rendements agricoles.</p>
+        <a href="project.html?id=agriconseil" class="btn">Voir détails</a>
+      </div>
+      <div class="project">
+        <div class="project-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">API</span>
+        </div>
+        <h3>Malischox</h3>
+        <p>Agenda culturel dynamique pour découvrir les événements festifs au Mali.</p>
+        <a href="project.html?id=malischox" class="btn">Voir détails</a>
+      </div>
+      <div class="project">
+        <div class="project-tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Supabase</span>
+        </div>
+        <h3>Sikaa</h3>
+        <p>Application mobile de logistique pour le suivi des colis en temps réel.</p>
+        <a href="project.html?id=sikaa" class="btn">Voir détails</a>
+      </div>
+    </div>
+    <p>Tous ces projets sont en cours de développement et presque terminés.</p>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Tu peux me contacter sur WhatsApp directement :</p>
+    <a href="https://wa.me/22383221696" class="btn"><i class="fab fa-whatsapp"></i> M’écrire</a>
+  </section>
+
+  <section id="contact-form-section" class="fade-in">
+    <h2>M'envoyer un message</h2>
+    <form id="contact-form">
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+      <input type="email" id="email" name="email" placeholder="Votre email" required />
+      <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p id="form-result"></p>
+  </section>
+
+  <button id="back-to-top" title="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <footer>
+    <div class="social-links">
+      <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.tiktok.com/@pixelcoder8?_r=1&_t=ZM-936jely5000" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="mailto:ibrahimakeita24@icloud.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; <span id="annee"></span> - Ibrahima Keïta. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
