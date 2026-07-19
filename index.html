@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -226,4 +227,178 @@
 
   <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ibrahima Keïta" />
+  <meta name="description" content="Portfolio de Ibrahima Keïta, développeur web passionné au Mali." />
+  <title>Portfolio - Ibrahima Keïta</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+ <header>
+  <div class="header-content">
+    <img src="img/kei.jpg" alt="Photo de Ibrahima Keïta" class="photo-profil">
+    <div class="header-text">
+      <h1>Ibrahima Keïta</h1>
+      <p class="subtitle">Développeur Web Passionné</p>
+    </div>
+  </div>
+
+  <!-- Bouton Mode Sombre/Clair -->
+  <button id="toggle-mode">
+    🌙 Mode Sombre
+  </button>
+</header>
+
+  <section id="about" class="fade-in">
+    <h2>À propos de moi</h2>
+    <p>Je suis un jeune passionné par le monde du web et de la technologie. Depuis mes débuts, j’ai toujours été fasciné par la façon dont une simple ligne de code peut donner vie à une idée. Chaque jour, j’apprends, je teste, je me trompe, je recommence — mais je n’abandonne jamais. Mon objectif est simple : devenir un développeur compétent, respecté et utile à ma communauté. Ce portfolio est le reflet de mon parcours, de mes efforts et de ma vision. Ce n’est que le début, mais je suis prêt à aller loin, étape par étape, projet par projet</p>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <h2>Mes Compétences</h2>
+    <ul class="skills-list">
+      <li>
+        <div class="skill-info">
+          <span><i class="fab fa-html5"></i> HTML</span>
+          <span>90%</span>
+        </div>
+        <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+        <p class="skill-details">Structure sémantique, SEO, Accessibilité web</p>
+      </li>
+      <li>
+        <div class="skill-info">
+          <span><i class="fab fa-css3-alt"></i> CSS</span>
+          <span>85%</span>
+        </div>
+        <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+        <p class="skill-details">Flexbox, Grid, Animations, Responsive Design</p>
+      </li>
+      <li>
+        <div class="skill-info">
+          <span><i class="fab fa-js"></i> JavaScript</span>
+          <span>75%</span>
+        </div>
+        <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+        <p class="skill-details">ES6+, Manipulation DOM, API Fetch, Async/Await</p>
+      </li>
+      <li>
+        <div class="skill-info">
+          <span><i class="fab fa-python"></i> Python</span>
+          <span>40%</span>
+        </div>
+        <div class="progress-bar"><div class="progress" data-width="40%"></div></div>
+        <p class="skill-details">Scripting, Automatisation, Analyse de données de base</p>
+      </li>
+      <li>
+        <div class="skill-info">
+          <span><i class="fas fa-code"></i> C++</span>
+          <span>60%</span>
+        </div>
+        <div class="progress-bar"><div class="progress" data-width="60%"></div></div>
+        <p class="skill-details">Programmation Orientée Objet, Algorithmes, Structures</p>
+      </li>
+      <li>
+        <div class="skill-info">
+          <span><i class="fab fa-php"></i> PHP</span>
+          <span>65%</span>
+        </div>
+        <div class="progress-bar"><div class="progress" data-width="65%"></div></div>
+        <p class="skill-details">Développement Backend, Connexion MySQL, Traitement de formulaires</p>
+      </li>
+    </ul>
+  </section>
+   
+   <section id="projects">
+    <h2>Mes Projets</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>Anw Ka Sugu</h3>
+        <p>Anw Ka Sugu est une boutique en ligne locale qui permet aux clients de découvrir et commander facilement des produits courants du Mali.
+Grâce à un système de panier, de livraison et de paiement mobile, l’application rend les achats rapides, pratiques et accessibles à tous.</p>
+        <a href="project.html?id=anwkasugu" class="btn">Voir détails</a>
+      </div>
+      <div class="project">
+        <h3>MaliCraft</h3>
+        <p> MaliCraft signifie les créations artisanales est une boutique en ligne que j’ai conçue pour aider les jeunes maliens à vendre leurs créations et services. J’ai travaillé sur le design, le code, l’interactivité et un système de panier + commande avec paiement par Mobile Money.</p>
+        <a href="project.html?id=malicraft" class="btn">Voir détails</a>
+      </div>
+      <div class="project">
+        <h3>JobGo</h3>
+        <p>JobGo est une plateforme de mise en relation entre les demandeurs d'emploi et les recruteurs. J'ai développé cette application pour faciliter la recherche d'emploi au Mali, en intégrant des fonctionnalités de filtrage et de messagerie.</p>
+        <a href="project.html?id=jobgo" class="btn">Voir détails</a>
+      </div>
+      <div class="project">
+        <h3>AgriConseil</h3>
+        <p>AgriConseil est une plateforme dédiée à l'agriculture au Mali. Elle fournit des conseils, des ressources et des outils aux agriculteurs pour améliorer leurs pratiques et augmenter leurs rendements. J'ai développé cette application en mettant l'accent sur l'accessibilité et la facilité d'utilisation.</p>
+        <a href="project.html?id=agriconseil" class="btn">Voir détails</a>
+      </div>
+      <div class="project">
+        <h3>Malischox</h3>
+        <p>Malischox est une plateforme d'événements au Mali qui permet aux Maliens de voir les fêtes à venir le week-end, dans le mois et l'année. J'ai conçu cette application pour mettre en avant les événements culturels et festifs du Mali, en intégrant un calendrier interactif et des options de partage sur les réseaux sociaux.</p>
+        <a href="project.html?id=malischox" class="btn">Voir détails</a>
+      </div>
+      <div class="project">
+        <h3>Sikaa</h3>
+        <p>Sikaa est une application mobile que j'ai développée pour aider les Maliens à trouver des livreurs fiables. Les commerçants peuvent facilement se connecter avec des livreurs pour livrer les colis des clients, et les clients peuvent suivre leur commande en temps réel.</p>  
+        <a href="project.html?id=sikaa" class="btn">Voir détails</a>
+      </div>
+    </div>
+    <p>Tous ces projets sont en cours de développement et presque terminés.</p>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Tu peux me contacter sur WhatsApp directement :</p>
+    <a href="https://wa.me/22383221696" class="btn"><i class="fab fa-whatsapp"></i> M’écrire</a>
+  </section>
+
+  <section id="contact-form-section" class="fade-in">
+    <h2>M'envoyer un message</h2>
+    <form id="contact-form">
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+      <input type="email" id="email" name="email" placeholder="Votre email" required />
+      <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p id="form-result"></p>
+  </section>
+
+  <button id="back-to-top" title="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <footer>
+    <div class="social-links">
+      <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.tiktok.com/@pixelcoder8?_r=1&_t=ZM-936jely5000" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="mailto:ibrahimakeita24@icloud.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; <span id="annee"></span> - Ibrahima Keïta. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+>>>>>>> 5d25db1a0678c53894eb1b1c4e9afb8313fe482c
 </html>
